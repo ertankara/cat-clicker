@@ -1,0 +1,59 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+* {
+  font-family: sans-serif;
+}
+
+
+.all-cats-display {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  border: 1px solid #777;
+  padding: 5px;
+}
+
+
+.each-cat {
+  width: 80px;
+  height: 60px;
+  border: 1px solid #777;
+  display: inline-block;
+  background-color: cadetblue;
+  margin: 5px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+.current-cat-display {
+  width: 700px;
+  height: 500px;
+  margin: 10px auto;
+  border: 1px solid #777;
+}
+
+
+.current-cat-props {
+  width: 450px;
+  height: 100px;
+  margin: 10px auto;
+  border: 1px solid #777;
+  font-size: 2.2em;
+  text-align: center;
+  color: black;
+}
+
+
+.current-cat-props > span {
+  color: olivedrab;
+}
+
+
+#current-cat-pic {
+  width: 100%;
+  height: 100%;
+}
