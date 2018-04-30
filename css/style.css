@@ -57,3 +57,15 @@
   width: 100%;
   height: 100%;
 }
+
+
+#admin-button {
+  display: block;
+  margin: auto;
+}
+
+
+body > form {
+  display: none;
+  margin: auto;
+}

@@ -11,7 +11,7 @@
   <div id="all-cats" class="all-cats-display">
     <!-- <div class="each-cat"></div> -->
   </div>
-  <div id="current-cat" class="current-cat-display">
+  <div class="current-cat-display">
     <img id="current-cat-pic" src="" alt="">
   </div>
   <div class="current-cat-props">
@@ -20,6 +20,21 @@
     Name:
     <span id="current-name"></span>
   </div>
+  <button id="admin-button">Admin</button>
+
+  <form>
+    <label for="new-cat-name">Cat Name</label>
+    <input type="text" id="new-cat-name">
+    <br>
+    <label for="new-cat-url">URL</label>
+    <input type="url" id="new-cat-url">
+    <br>
+    <label for="new-cat-clicks">Clicks</label>
+    <input type="text" id="new-cat-clicks">
+    <input id="admin-save-button" type="button" value="Save">
+    <input id="admin-cancel-button" type="button" value="Cancel">
+  </form>
+
   <script src="js/app.js"></script>
 </body>
 </html>
