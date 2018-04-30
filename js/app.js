@@ -43,7 +43,7 @@
 
     setNewCat(cat) {
       model.allCats.push(cat);
-      catListView.init();
+      catListView.render();
     }
 
   };
@@ -136,18 +136,19 @@
       this.adminCancelButton = document
         .querySelector('#admin-cancel-button');
 
+      this.render();
+
+    },
 
 
-
+    render() {
       this.adminButton.addEventListener('click', () => {
         this.formElement.style.display = 'block';
       });
 
-
       this.adminCancelButton.addEventListener('click', () => {
         this.formElement.style.display = 'none';
       });
-
 
       this.adminSaveButton.addEventListener('click', () => {
         const newObj = {
@@ -157,12 +158,7 @@
         };
 
         octopus.setNewCat(newObj);
-      })
-    },
-
-
-    render() {
-
+      });
     }
   }
 
